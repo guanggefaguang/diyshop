@@ -1,0 +1,26 @@
+<view class="main">
+  <view class="header">
+    <image src="{{thumb}}" class="thumb"></image>
+    <text class="nickname">{{nickname}}</text>
+    <button class="about">
+      <image src="../../../image/call.png" class='Call'></image>客服
+    </button>
+  </view>
+  <view class="address-box">
+    <view class="address-manage">
+      <navigator url="/page/component/choice/choice" class='dz'>地址管理</navigator>
+    </view>
+  </view>
+  <view class="orders-box">
+    <view class="orders">我的订单</view>
+    <view class="orders-list" wx:for="{{orders}}" wx:key="index">
+      <view class="orders-detail">
+        <image src="{{item.thumb}}"></image>
+        <view class="commodity">{{item.name}}</view>
+        <view class="num">{{item.count}}(件)</view>
+        <view class="deliver">收货地址:{{item.deliver}}</view>
+        <view class="orders-number">订单编号：{{item.number}}</view>
+      </view>
+    </view>
+  </view>
+</view>

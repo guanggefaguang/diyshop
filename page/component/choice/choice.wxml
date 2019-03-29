@@ -1,0 +1,16 @@
+<!--page/component/choice/choice.wxml-->
+<view class="big_box">
+  <view class='Info'>
+    <text>某某人</text>
+    <text>15000000000</text>
+  </view>
+  <view class='address'>
+    北京市 北京市 东城区 某某街道某某小区2单元7号楼705
+  </view>
+</view>
+
+<view class='add'>
+  <navigator url='../address/address'>
+    <text class='init'>+添加地址</text>
+  </navigator>
+</view>
